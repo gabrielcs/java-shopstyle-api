@@ -24,7 +24,9 @@ public class Product
     private String description;
     private Brand brand;
     private String clickUrl;
+    private String pageUrl;
     private Image image;
+    private Image[] alternateImages;
     private ProductColor[] colors;
     private ProductSize[] sizes;
     private Category[] categories;
@@ -230,6 +232,16 @@ public class Product
     {
         this.clickUrl = clickUrl;
     }
+    
+    public String getPageUrl()
+    {
+        return pageUrl;
+    }
+
+    public void setPageUrl(String pageUrl)
+    {
+        this.pageUrl = pageUrl;
+    }
 
     public Image getImage()
     {
@@ -239,6 +251,16 @@ public class Product
     public void setImage(Image image)
     {
         this.image = image;
+    }
+    
+    public Image[] getAlternateImages()
+    {
+        return alternateImages;
+    }
+
+    public void setAlternateImages(Image[] alternateImages)
+    {
+        this.alternateImages = alternateImages;
     }
 
     public ProductColor[] getColors()
